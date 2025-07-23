@@ -2,10 +2,10 @@
 # distutils: language = c++
 from libcpp.string cimport string
 from libcpp cimport bool
-cdef extern from "src/levypy/cpp/src/LevelDbWrapper.cpp":
+cdef extern from "src/levlpy/cpp/src/LevelDbWrapper.cpp":
     pass
 
-cdef extern from "src/levypy/cpp/include/LevelDbWrapper.h":
+cdef extern from "src/levlpy/cpp/include/LevelDbWrapper.h":
     cdef cppclass CLevelDbIterator:
         bool GetAndNext(string&key, string&value)
         bool GetAndPrev(string&key, string&value)
